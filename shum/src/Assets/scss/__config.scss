@@ -28,6 +28,7 @@ a{
     text-decoration: none !important;
     @include transition(.4s ease-in-out );
     cursor: pointer;
+    color: $white;
 
     &:hover{
         color: $red;
