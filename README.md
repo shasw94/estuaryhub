@@ -1,2 +1,2 @@
 # estuaryhub
-A blog
+A test blog between people
