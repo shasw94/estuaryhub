@@ -4,15 +4,43 @@ import './Assets/css/default.min.css';
 
 import Header from './Components/headerComponents/header.js'
 import Home from './Components/pages/Homepage/home.js'
+import Team from './Components/pages/team/team.js'
+import Aim from './Components/pages/aim/aim.js'
+import Contact from './Components/pages/Contact/contact'
+import Scroll from 'react-scroll';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+var Element = Scroll.Element;
+
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className="App">
-        <div className="top-container">
-          <Header />
-          <Home />
+        <div className="row">
+          <div className="col-xs-12 top-container">
+            <Header />
+            <Element name="section1">
+              <Home />
+            </Element>
+          </div>
         </div>
+        <Element name="section2">
+                <Aim />
+        </Element>
+        <Element name="section3">
+            <Team />
+        </Element>
+        <Element name="section4">
+            <Contact />
+        </Element>
       </div>
+      </Router>
     );
   }
 }
