@@ -9,28 +9,16 @@ class Aim extends Component {
                 <div className="content-wrapper">
                     <div className=" col-xs-12 content-section">
                         <ScrollUpButton />
-                        <div className="tag-line">
-                            What we do
+                        <div className="tag-line white">
+                            <span className="red">THE CLOUD COMPANY</span> <br/> <span className="black">making<span className="yellow"> cloud </span> safer for <span className="yellow">businesses</span></span>
                         </div>
-                        <div className="row">
-                            <div className="col-sm-4 contain">
-                                <img src={require('../../../Assets/Images/development.svg')} className="img-responsive image" alt="Image" />
-                                <div className="middle">
-                                    <div className="text">Development</div>
-                                </div>
-                            </div>
-                            <div className="col-sm-4 contain">
-                                <img src={require('../../../Assets/Images/security.svg')} className="img-responsive image" alt="Image" />
-                                <div className="middle">
-                                    <div className="text">Security</div>
-                                </div>
-                            </div>
-                            <div className="col-sm-4 contain">
-                                <img src={require('../../../Assets/Images/service.svg')} className="img-responsive image" alt="Image" />
-                                <div className="middle">
-                                    <div className="text">Service</div>
-                                </div>
-                            </div>
+                        <div className="btn-text">
+                            <div> How we do it </div>
+                            
+                        </div>
+                        <div className="text white">
+                         Application security encompasses measures or counter-measures that are taken during the development life-cycle to protect applications from threats that can come through flaws in the application design, development, deployment, upgrade or maintenance. Some basic techniques used for application security are: a) Input parameter validation, b) User/Role Authentication & Authorization, c) Session management, parameter manipulation & exception management, and d) Auditing and logging.
+                        Information security protects information from unauthorized access to avoid identity theft and to protect privacy. Major techniques used to cover this are: a) Identification, authentication & authorization of user, b) Cryptography.
                         </div>
                     </div>
                 </div>

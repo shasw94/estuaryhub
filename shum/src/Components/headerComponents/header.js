@@ -24,10 +24,7 @@ class Header extends Component {
         </div>
         <nav>
           <ul>
-            <li className="first"><a  onClick={() => this.scroll("section1")}>Home </a></li>
-            <li><a  onClick={() => this.scroll("section2")}>Aim</a></li>
-            <li><a  onClick={() => this.scroll("section3")}>Team</a></li>
-            <li className="last"><a onClick={() => this.scroll("section4")} >Contact Us</a></li>
+            <li className="last"><a onClick={() => this.scroll("section4")} >CONTACT US</a></li>
           </ul>
         </nav>
       </header>

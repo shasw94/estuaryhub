@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './Assets/css/default.min.css';
 
 import Header from './Components/headerComponents/header.js'
+import Content from './Components/Contents/content.js'
 import Home from './Components/pages/Homepage/home.js'
 import Team from './Components/pages/team/team.js'
 import Aim from './Components/pages/aim/aim.js'
@@ -23,9 +24,10 @@ class App extends Component {
       <Router>
       <div className="App">
         <div className="row">
-          <div className="col-xs-12 top-container">
+          <div className="col-xs-12 ">
             <Header />
-            <Element name="section1">
+            <Content />
+            <Element name="section1" className="top-container">
               <Home />
             </Element>
           </div>
@@ -33,9 +35,9 @@ class App extends Component {
         <Element name="section2">
                 <Aim />
         </Element>
-        <Element name="section3">
+        {/* <Element name="section3">
             <Team />
-        </Element>
+        </Element> */}
         <Element name="section4">
             <Contact />
         </Element>

@@ -28,7 +28,7 @@ a{
     text-decoration: none !important;
     @include transition(.4s ease-in-out );
     cursor: pointer;
-    color: $white;
+    color: $black;
 
     &:hover{
         color: $red;

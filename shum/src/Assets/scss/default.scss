@@ -1,6 +1,7 @@
 @import "__config.scss";
 *{
     box-sizing: border-box;
+
 }
 .yellow{
     color: yellow;
@@ -8,12 +9,50 @@
 .red{
     color: $red;
 }
+.white{
+    color: $white;
+}
 .text-center{
     text-align: center;
 }
 body{
     color: blue;
     // background: black;
+}
+content{
+    .content-nav{
+        margin: 12px;
+    }
+    nav,
+    nav ul,
+    nav ul li{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        position: relative;
+        top: 80%;right: 15px;
+        @include translate(-50%);
+        .content-nav{
+            top: 10%; right: 0px;
+        }
+    }
+    ul li{
+        list-style-type: none;
+        display: inline-block;
+        
+        margin-left: 50px !important;
+
+        &.first{
+            margin: 0;
+        }
+        a{
+            color: $black;
+            font-size: 19px;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
 }
 header{
     position: relative;
@@ -24,7 +63,7 @@ header{
     height: 90px;
     .logo{
         position: absolute;
-        top: 50%; left: 15px;
+        top: 50%; left: 50px;
         color: $red !important;
         //height: 150px;
         // margin: 2%;
@@ -44,6 +83,9 @@ header{
         
         top: 50%;right: 15px;
         @include translate(-50%);
+        .content-nav{
+            top: 10%; right: 0px;
+        }
     }
     ul li{
         list-style-type: none;
@@ -55,7 +97,8 @@ header{
             margin: 0;
         }
         a{
-            font-size: 19px;
+            color: #4d4dff;
+            font-size: 15px;
             line-height: normal;
             text-decoration: none;
         }
@@ -128,10 +171,16 @@ p{
 }
 
 .Aim{
+    background-image: url("../Images/Aim2.jpg") !important;
+    background-position: 30% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $white;
     //display: block;
     position: relative;
     z-index: 999;
-    margin: 5% 8%;
+    // margin: 5% 8%;
     // float: left;
     .image{
         // width: 90%;
@@ -139,11 +188,13 @@ p{
         display: block;
         transition: .5s ease;
         backface-visibility: hidden;
+        width: 20%;
     }
     .contain{
         position: relative;
+        
         img{
-            margin-left: 21%;
+            margin-left: 30%;
         }
         // width: 50%;
     }
@@ -157,10 +208,40 @@ p{
     .text{
         text-align: center;
         font-size: 25px;
-        color: $red;
+        color: #fff;
     }
-    img{
-        height: 200px;
+    .btn-text{
+        background-color: $red;
+        border-radius: 4px;
+        color: $white;
+        display: inline-block;
+        font-family: "Source Sans Pro",Arial,sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: .04em;
+        line-height: 1;
+        margin-bottom: .5em;
+        margin-right: .5em;
+        margin-left: 44%;
+        padding: .75em 1.2em;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        a{
+            color: #fff;
+    }
+    }
+    .white{
+        color: #fff;
+    }
+    .yellow{
+        font-weight: 550;
+    }
+    .red{
+        font-weight: 550;
+    }
+    .black{
+        font-weight: 500;
     }
 }
 .team-container{
